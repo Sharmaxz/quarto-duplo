@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 .mdc-top-app-bar {
     height: 55px;
     background-color: rgb(125, 0, 125);
@@ -17,4 +21,74 @@
     padding: 3px 0px 0px 0px;
     font-size: 15px;
     font-weight: 100;
+}
+
+
+
+.mdc-card {
+    margin: 5px;
+}
+
+
+.container-hero {
+    text-align: center;
+}
+
+.container-hero-img {
+    max-height: 1000px;
+    width: 100%;
+}
+
+
+
+.container-explain {
+    position: relative;
+    margin: 2px;
+}
+
+
+.explain-card-title{
+    text-align: center
+}
+
+.explain-card-subtitle{
+    text-align: justify;
+}
+
+.icon-wrench {
+    text-align: center;
+}
+
+.fa-wrench {
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+.how-it-works-card-title {
+    text-align: center;
+}
+
+.how-it-works-card-subtitle {
+    text-align: justify;
+    padding: 25px;
+}
+
+.section-how-it-works{
+    padding: 3px 0px 0px 0px;
+    width: 47%;
+}
+
+
+.section-why-use-this{
+
+
+}
+
+.why-use-this-card-title{
+
+}
+
+.why-use-this-card-subtitle{
+
 }

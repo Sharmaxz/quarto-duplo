@@ -4,7 +4,7 @@ from django.contrib import admin
 
 class User(models.Model):
     name = models.CharField(max_length=200)
-    age = models.DateField(blank=False)
+    birthday = models.DateField(blank=False)
     cpf = models.CharField(max_length=14)
     email = models.CharField(max_length=200)
 
@@ -22,4 +22,4 @@ class User(models.Model):
 
 
 class Admin(admin.ModelAdmin):
-    list_display = ('name', 'age', 'cpf', 'email')
+    list_display = ('name', 'birthday', 'cpf', 'email')
