@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <title>Hotel Share - Bem Vindo!</title>
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script src="../static/js/script.js"></script>
+    </head>
+    <body>
+        <header class="mdc-top-app-bar mdc-elevation--z2" style="top:0px;left:0px;">
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <span class="mdc-top-app-bar__title">Hotel Share</span>
+                   {% comment %} <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a> {% endcomment %}
+                </section>
+                <section class="mdc-top-app-bar__section">
+                    <button class="mdc-button mdc-button--outlined">SIGN IN</button>
+                </section>
+            </div>
+        </header>
+    </body>
+</html>
