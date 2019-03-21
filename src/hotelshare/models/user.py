@@ -4,7 +4,7 @@ from django.contrib import admin
 
 class User(models.Model):
     name = models.CharField(max_length=200)
-    birthday = models.DateField(blank=False)
+    birthday = models.DateField(blank=False, null=False)
     cpf = models.CharField(max_length=14)
     email = models.CharField(max_length=200)
 

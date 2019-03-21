@@ -1,6 +1,5 @@
 from django.contrib import admin
 from django.db import models
-from . import user
 
 GENDER_CHOICES = (
     ('M', "Masculino" ),
@@ -9,10 +8,13 @@ GENDER_CHOICES = (
 
 
 class Request(models.Model):
+    user = models.ForeignKey('user', blank=False, on_delete=models.CASCADE)
+    adress = models.ForeignKey('local', blank=False, null=False, default='', on_delete=models.CASCADE)
+    event = models.ForeignKey('event', blank=False, null=False, default='', on_delete=models.CASCADE)
+    gender_pref = models.CharField(choices=GENDER_CHOICES, max_length=100)
     checkin = models.DateField(blank=False, null=False)
     checkout = models.DateField(blank=False, null=False)
-    gender_pref = models.CharField(choices=GENDER_CHOICES, max_length=100)
-    user = models.ForeignKey(user.User, blank=False, on_delete=models.CASCADE)
+
 
     class Meta:
         abstract = False
@@ -28,4 +30,4 @@ class Request(models.Model):
 
 
 class Admin(admin.ModelAdmin):
-    list_display = ('checkin', 'checkout', 'gender_pref', 'user')
+    list_display = ('user', 'adress', 'gender_pref',  'checkin', 'checkout',)

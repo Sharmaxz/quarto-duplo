@@ -43,7 +43,7 @@ body {
 
 .container-explain {
     position: relative;
-    margin: 2px;
+    margin: 15px 40px 15px 40px;
 }
 
 
@@ -76,12 +76,13 @@ body {
 
 .section-how-it-works{
     padding: 3px 0px 0px 0px;
-    width: 47%;
+    //width: 47%;
 }
 
 
 .section-why-use-this{
-
+    position: relative;
+    margin: 15px 40px 15px 40px;
 
 }
 

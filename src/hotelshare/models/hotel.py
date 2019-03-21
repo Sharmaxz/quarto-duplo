@@ -4,7 +4,7 @@ from django.db import models
 
 class Hotel(models.Model):
     name = models.CharField(max_length=150)
-    adress = models.CharField(max_length=250)
+    adress = models.ForeignKey('local', blank=True, default='', on_delete=models.CASCADE)
     daily_min = models.DecimalField(max_digits=10, decimal_places=2)
     daily_max = models.DecimalField(max_digits=10, decimal_places=2)
 

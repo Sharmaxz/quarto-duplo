@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+}
+
+.mdc-top-app-bar{
+    position: absolute;
+    top: 0;
+    margin-bottom: 40px;
+}
+.main-title {
+    text-align: center;
+}
+
+.request-card {
+    text-align: center;
+}
+
+.request-card-primary {
+    position: relative;
+    display: inline-block;
+    top: 30px;
+    margin-top: 15px;
+    width: 300px
+}
+
+.request-card-subtitle {
+    margin: 5px 5px 0px 5px;
+}
+
+.request-card-info {
+    margin: 5px 5px 20px 5px;
+}

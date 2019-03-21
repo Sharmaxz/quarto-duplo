@@ -4,11 +4,13 @@ from django.db import models
 
 class Event(models.Model):
     name = models.CharField(max_length=150)
-    adress = models.ForeignKey('Local', null=True, blank=True, on_delete=models.SET_NULL)
+    adress = models.ForeignKey('Local', blank=True, default='', on_delete=models.CASCADE)
     start_date = models.DateField(blank=False, null=False)
     end_date = models.DateField(blank=False, null=False)
     site = models.URLField(max_length=200)
-    request = models.ForeignKey('Request', null=True, blank=True, on_delete=models.SET_NULL)
+
+    def __str__(self):
+        return self.name
 
     class Meta:
         abstract = False
@@ -21,4 +23,4 @@ class Event(models.Model):
 
 
 class Admin(admin.ModelAdmin):
-    list_display = ('name', 'adress', 'start_date', 'end_date', 'site', 'request')
+    list_display = ('name', 'adress', 'start_date', 'end_date', 'site')

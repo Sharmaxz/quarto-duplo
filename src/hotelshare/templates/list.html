@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hotel Share - List</title>
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+        <link rel="stylesheet" href="{% static 'css/list-style.css' %}">
+    </head>
+    <body>
+         <header class="mdc-top-app-bar mdc-elevation--z2">
+                <span class="main-title mdc-top-app-bar__title">PEDIDO</span>
+        </header>
+        {% for r in request %}
+        <div class="mdc-card request-card-primary">
+              <div class="request-card">
+                  <h2 class="request-card-title mdc-typography mdc-typography--headline6">Pedido</h2>
+                  <h3 class="request-card-subtitle mdc-typography mdc-typography--subtitle2"><b>{{ r.user }}</b></h3>
+                  <h4 class="request-card-info mdc-typography mdc-typography--body2">
+                      <b>Género de Pref.:</b> {{ r.gender_pref }}
+                      <br>
+                      <b>Check In:</b> {{ r.checkin }}
+                      <br>
+                      <b>Check In:</b> {{ r.checkout }}
+                      <br>
+                      <b>Endereço:</b> {{ r.adress }}
+                      <br>
+                      <b>Evento:</b> {{ r.event }}
+                  </h4>
+              </div>
+             <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+            </div>
+          </div>
+        {%  endfor %}
+    </body>
+</html>
