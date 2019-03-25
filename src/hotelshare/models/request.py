@@ -10,11 +10,10 @@ GENDER_CHOICES = (
 class Request(models.Model):
     user = models.ForeignKey('user', blank=False, on_delete=models.CASCADE)
     adress = models.ForeignKey('local', blank=False, null=False, default='', on_delete=models.CASCADE)
-    event = models.ForeignKey('event', blank=False, null=False, default='', on_delete=models.CASCADE)
+    event = models.ForeignKey('event', blank=True, null=True, default='', on_delete=models.CASCADE)
     gender_pref = models.CharField(choices=GENDER_CHOICES, max_length=100)
     checkin = models.DateField(blank=False, null=False)
     checkout = models.DateField(blank=False, null=False)
-
 
     class Meta:
         abstract = False

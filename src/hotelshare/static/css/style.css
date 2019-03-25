@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    background-color: rgb(242, 242, 242);
 }
 
 .mdc-top-app-bar {
@@ -17,13 +18,22 @@ body {
     font-weight: 100;
 }
 
+.request-button{
+    position: relative;
+    left: 75%;
+    padding: 3px 3px 0px 3px;
+    font-size: 15px;
+    color: white !important;
+}
+
 .mdc-button {
-    padding: 3px 0px 0px 0px;
     font-size: 15px;
     font-weight: 100;
 }
 
-
+.explain-mdc-card{
+    background-color: rgba(25,0,25,0.2)
+}
 
 .mdc-card {
     margin: 5px;
@@ -42,13 +52,23 @@ body {
 
 
 .container-explain {
-    position: relative;
+    color: white;
+    position: absolute;
     margin: 15px 40px 15px 40px;
+    top: 150px;
+    z-index: 2;
+}
+
+.container-explain2 {
+    margin: 15px 40px 15px 40px;
+    top: 150px;
+    z-index: 2;
 }
 
 
 .explain-card-title{
-    text-align: center
+    text-align: center;
+    color: #f0f;
 }
 
 .explain-card-subtitle{
@@ -57,12 +77,24 @@ body {
 
 .icon-wrench {
     text-align: center;
+    color: rgb(125, 0, 125);
 }
 
 .fa-wrench {
     text-align: center;
     padding-top: 15px;
 }
+
+.icon-earth {
+    text-align: center;
+    color: rgb(125, 0, 125);
+}
+
+.fa-globe-americas {
+    text-align: center;
+    padding-top: 15px;
+}
+
 
 
 .how-it-works-card-title {
@@ -72,24 +104,57 @@ body {
 .how-it-works-card-subtitle {
     text-align: justify;
     padding: 25px;
+    color: rgb(87, 87, 87);
 }
 
 .section-how-it-works{
     padding: 3px 0px 0px 0px;
-    //width: 47%;
 }
 
 
 .section-why-use-this{
-    position: relative;
-    margin: 15px 40px 15px 40px;
-
+     padding: 3px 0px 0px 0px;
 }
 
 .why-use-this-card-title{
-
+    text-align: center;
 }
 
 .why-use-this-card-subtitle{
+    text-align: justify;
+    padding: 25px;
+    color: rgb(87, 87, 87);
+}
 
+.container-form {
+    margin: 15px 40px 15px 40px;
+    z-index: 2;
+}
+
+.form-title{
+    text-align: center;
+}
+
+.user-form {
+    width: 48%;
+    text-align: center;
+    margin: 14px 0px 14px 0px;
+    padding: 25px;
+}
+
+.request-form {
+    width: 48%;
+    text-align: center;
+    margin: 14px 0px 14px 0px;
+    padding: 25px;
+}
+
+#id_adress {
+    width: 50%;
+}
+
+.footer-background {
+    height: 250px;
+    margin: 15px 0px 0px 0px;
+    background: rgb(125, 0, 125);
 }

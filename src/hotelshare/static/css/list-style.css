@@ -7,8 +7,19 @@ body {
     top: 0;
     margin-bottom: 40px;
 }
+
 .main-title {
+    position: relative;
     text-align: center;
+    left: 40%;
+}
+
+.fas, .fa-arrow-left{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    left: 15%;
+    text-decoration: none;
 }
 
 .request-card {
@@ -30,3 +41,4 @@ body {
 .request-card-info {
     margin: 5px 5px 20px 5px;
 }
+
