@@ -1,0 +1,1 @@
+web: gunicorn quarto_duplo.wsgi --log-file -
